@@ -10,8 +10,6 @@ META-TRACKER MY is an end-to-end, zero-cost competitor intelligence workstation 
 ## 🖼️ System Workstation & Dashboard Overview
 
 | Campaign Ingestion & Log (React Workstation) | Executive Insights Hub (Looker Studio) |
-| :---: | :---: |
-| ![Meridian Workstation] | ![Looker Studio Dashboard]|
 
 ---
 
