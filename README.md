@@ -3,26 +3,26 @@
 ## 📌 Executive Summary
 META-TRACKER MY is an end-to-end, zero-cost competitor intelligence workstation designed to track, extract, and visualize sponsorship advertising across the Malaysian technology media ecosystem. By deploying a multimodal Gemini LLM vision engine inside a custom React workstation, the system converts unstructured ad screenshots from the Meta Ads Library into standardized datasets to track competitor Share of Voice (SoV), campaign launch velocity, and market penetration gaps.
 
-
-
 ---
 
 ## 🖼️ System Workstation & Dashboard Overview
 
-| Campaign Ingestion & Log (React Workstation) | Executive Insights Hub (Looker Studio) |
+| Campaign Ingestion & Log (React Workstation) | Executive Insights Hub (Looker Studio) | Master Database (Google Sheets) |
+| :---: | :---: | :---: |
+| ![React Workstation](AI%20System.png) | ![Looker Studio](Screenshot%202026-09-10%20141444.png) | ![Google Sheet](Google%20Sheet.png) |
 
 ---
 
 ## 🛠️ Technical Architecture & Pipeline
 
 ```text
-[Meta Ads Library] 
-       │
-       ▼ (Clipboard Screenshot / Ctrl+V)
-[React Ad-Intel Workstation] ──► [Gemini Multimodal Vision Engine]
-       │                          (OCR & Entity Normalization)
-       ▼
-[Client LocalStorage Cache] ──► [Google Sheets (Master Database)]
-(Text-Only Anti-Crash Engine)            │
-                                         ▼
+[Meta Ads Library]
+        |
+        ▼ (Clipboard Screenshot / Ctrl+V)
+[React Ad-Intel Workstation] ➔ [Gemini Multimodal Vision Engine]
+        |                      (OCR & Entity Normalization)
+        ▼
+[Client LocalStorage Cache] ➔ [Google Sheets (Master Database)]
+(Text-Only Anti-Crash Engine)          |
+                                       ▼
                              [Looker Studio Analytics]
